@@ -1,0 +1,74 @@
+/* 📚 Penjelasan: File ini berisi semua styling tambahan yang tidak bisa dihandle langsung oleh Tailwind CSS dan juga untuk mendefinisikan tampilan dasar yang konsisten. */
+
+/* Menggunakan font Roboto Condensed yang elegan dan simple */
+body {
+    /* 📚 Penjelasan: Mengatur font default untuk seluruh halaman menjadi 'Roboto Condensed'. Jika gagal, fallback ke sans-serif. */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Base style untuk semua tombol kalkulator */
+.btn-calc {
+    /* 📚 Penjelasan: Menetapkan tampilan dasar yang akan dimiliki semua tombol: Ukuran teks, bold, padding, radius, dan efek bayangan. */
+    font-size: 1.5rem; /* 2xl */
+    font-weight: 700; /* bold */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1.25rem; /* p-5 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    color: white; /* text-white */
+    transition: all 0.15s ease-in-out; /* Untuk efek hover dan active */
+    outline: none; /* Menghilangkan outline fokus default */
+}
+
+/* Efek tombol saat diklik (lebih terasa) */
+.btn-calc:active {
+    /* 📚 Penjelasan: Saat tombol diklik, ukurannya mengecil 5% dan bayangannya sedikit bergeser ke bawah, memberikan feedback visual yang lebih baik. */
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna-warna Tombol Custom */
+
+/* Tombol Angka (Dark) */
+.btn-dark {
+    /* 📚 Penjelasan: Tombol angka dan titik (.), warnanya biru gelap agar kontras dengan latar belakang. */
+    background-color: #2e4d7e; /* Biru Gelap Custom */
+}
+.btn-dark:hover {
+    background-color: #3f66a2; /* Sedikit lebih terang saat di-hover */
+}
+
+/* Tombol Operator (Blue) */
+.btn-blue {
+    /* 📚 Penjelasan: Tombol operator (+, -, *, /). Warnanya biru yang lebih cerah. */
+    background-color: #4c7ad3;
+}
+.btn-blue:hover {
+    background-color: #5c8ae8;
+}
+
+/* Tombol Clear (Red) */
+.btn-red {
+    /* 📚 Penjelasan: Tombol C. Warnanya merah, menandakan fungsi reset/bahaya. */
+    background-color: #dc2626;
+}
+.btn-red:hover {
+    background-color: #ef4444;
+}
+
+/* Tombol Sama Dengan (Green) */
+.btn-green {
+    /* 📚 Penjelasan: Tombol =. Warnanya hijau, menandakan fungsi eksekusi/sukses. */
+    background-color: #16a34a;
+}
+.btn-green:hover {
+    background-color: #22c55e;
+}
+
+/* Tombol DEL dan % (Gray) */
+.btn-gray {
+    /* 📚 Penjelasan: Tombol DEL dan %. Warnanya abu-abu agar terlihat netral tapi tetap kontras. */
+    background-color: #6b7280;
+}
+.btn-gray:hover {
+    background-color: #9ca3af;
+}

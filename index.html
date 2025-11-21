@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Biru Leandro | 1710624067</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="kalkulator-container w-full max-w-sm bg-blue-900 rounded-2xl shadow-2xl p-6 space-y-4">
+        <div class="text-white mb-4 text-left">
+            <p class="font-bold text-lg">Leandro Pahalatua Siringo Ringo</p>
+            <p class="text-sm">1710624067</p>
+        </div>
+        <div class="bg-blue-800 rounded-lg p-4 shadow-inner">
+            <input type="text" id="display"
+                   class="w-full bg-transparent text-right text-5xl font-mono text-white border-0 outline-none p-2"
+                   readonly
+                   placeholder="0">
+            </div>
+
+        <div class="grid grid-cols-4 gap-3">
+            <button data-value="C" class="btn-calc btn-red">C</button>
+            <button data-value="DEL" class="btn-calc btn-gray">DEL</button>
+            <button data-value="%" class="btn-calc btn-gray">%</button>
+            <button data-value="/" class="btn-calc btn-blue">/</button>
+
+            <button data-value="7" class="btn-calc btn-dark">7</button>
+            <button data-value="8" class="btn-calc btn-dark">8</button>
+            <button data-value="9" class="btn-calc btn-dark">9</button>
+            <button data-value="*" class="btn-calc btn-blue">*</button>
+
+            <button data-value="4" class="btn-calc btn-dark">4</button>
+            <button data-value="5" class="btn-calc btn-dark">5</button>
+            <button data-value="6" class="btn-calc btn-dark">6</button>
+            <button data-value="-" class="btn-calc btn-blue">-</button>
+
+            <button data-value="1" class="btn-calc btn-dark">1</button>
+            <button data-value="2" class="btn-calc btn-dark">2</button>
+            <button data-value="3" class="btn-calc btn-dark">3</button>
+            <button data-value="+" class="btn-calc btn-blue">+</button>
+
+            <button data-value="0" class="btn-calc btn-dark col-span-2">0</button>
+            <button data-value="." class="btn-calc btn-dark">.</button>
+            <button data-value="=" class="btn-calc btn-green">=</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
